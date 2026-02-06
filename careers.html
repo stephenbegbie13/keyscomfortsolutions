@@ -1,1 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Join Keys Comfort Solutions. Apply for HVAC and refrigeration roles serving the Florida Keys." />
+  <meta name="theme-color" content="#083344" />
+
+  <title>Careers | Keys Comfort Solutions</title>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <script defer src="/assets/script.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Keys Comfort Solutions home">
+        <img src="/assets/logo.svg" alt="" width="34" height="34" />
+        <div class="brand-text">
+          <span class="brand-name">Keys Comfort Solutions</span>
+          <span class="brand-tag">HVAC • Refrigeration • Florida Keys</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="/#services">Services</a>
+        <a href="/#maintenance">Maintenance</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/#area">Service Area</a>
+        <a href="/careers.html" aria-current="page">Careers</a>
+        <a class="btn btn-small btn-primary" href="/#request">Request Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h1>Careers</h1>
+          <p class="muted">
+            We’re building a team that does clean work, communicates clearly, and understands coastal conditions.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h2 class="h3">What we value</h2>
+            <ul class="checklist">
+              <li>Professionalism + clear customer communication</li>
+              <li>Solid troubleshooting and quality installs</li>
+              <li>Respect for homes, businesses, and time</li>
+              <li>Safety-first work and clean job sites</li>
+            </ul>
+
+            <hr class="sep" />
+
+            <h2 class="h3">Common roles</h2>
+            <ul class="bullets">
+              <li>HVAC Service Technician</li>
+              <li>Install Technician</li>
+              <li>Commercial Refrigeration Technician</li>
+              <li>Apprentice / Helper</li>
+            </ul>
+
+            <p class="muted small">
+              Tip: Update these roles to match what you’re hiring for right now.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 class="h3">Apply online</h2>
+
+            <!-- Netlify Forms: Careers Application (supports file upload) -->
+            <form name="careers-application"
+                  method="POST"
+                  netlify
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  enctype="multipart/form-data"
+                  action="/thank-you/"
+                  class="form">
+
+              <input type="hidden" name="form-name" value="careers-application" />
+
+              <p hidden>
+                <label>Don’t fill this out: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-row">
+                <label>
+                  Full name
+                  <input name="name" autocomplete="name" required />
+                </label>
+              </div>
+
+              <div class="form-row split">
+                <label>
+                  Phone
+                  <input name="phone" inputmode="tel" autocomplete="tel" required />
+                </label>
+                <label>
+                  Email
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+              </div>
+
+              <div class="form-row split">
+                <label>
+                  Position of interest
+                  <select name="position" required>
+                    <option value="" selected disabled>Select one…</option>
+                    <option>HVAC Service Technician</option>
+                    <option>Install Technician</option>
+                    <option>Commercial Refrigeration Technician</option>
+                    <option>Apprentice / Helper</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+                <label>
+                  Years of experience
+                  <select name="experience" required>
+                    <option value="" selected disabled>Select one…</option>
+                    <option>0–1</option>
+                    <option>2–4</option>
+                    <option>5–9</option>
+                    <option>10+</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  Certifications / licenses (optional)
+                  <input name="certifications" placeholder="EPA 608, HVAC license, etc." />
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  Short message
+                  <textarea name="message" rows="5" required placeholder="Tell us about your background and what you’re looking for."></textarea>
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  Resume (PDF/DOC) (optional)
+                  <input type="file" name="resume" accept=".pdf,.doc,.docx" />
+                </label>
+                <p class="muted small">
+                  If upload fails, email your resume instead.
+                </p>
+              </div>
+
+              <div class="form-row">
+                <button class="btn btn-primary btn-block" type="submit">Submit Application</button>
+                <p class="muted small">
+                  Prefer email? Send to <a href="mailto:careers@keyscomfortsolutions.com">careers@keyscomfortsolutions.com</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="cta-strip">
+          <div>
+            <h2 class="cta-title h3">Want to request service instead?</h2>
+            <p class="muted">Use our online request form to get scheduled quickly.</p>
+          </div>
+          <a class="btn btn-secondary" href="/#request">Request Service</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/logo.svg" alt="" width="28" height="28" />
+        <div>
+          <div class="footer-name">Keys Comfort Solutions</div>
+          <div class="muted small">HVAC • Refrigeration • Florida Keys</div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="/#services">Services</a>
+        <a href="/#request">Request Service</a>
+        <a href="/careers.html" aria-current="page">Careers</a>
+        <a href="mailto:info@keyscomfortsolutions.com">info@keyscomfortsolutions.com</a>
+      </div>
+
+      <div class="footer-meta muted small">
+        <div>© <span id="year"></span> Keys Comfort Solutions. All rights reserved.</div>
+        <div>Made for coastal comfort.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
 
