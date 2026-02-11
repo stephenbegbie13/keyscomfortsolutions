@@ -4,9 +4,9 @@
    =========================== */
 
 :root{
-  --bg: #071b22;              /* deep ocean */
-  --surface: #0b2c35;         /* dark teal */
-  --surface-2: #0e3642;       /* alt teal */
+  --bg: #182432;              /* logo navy */
+  --surface: #1f3144;         /* deep slate */
+  --surface-2: #253a52;       /* alt surface */
   --card: rgba(255,255,255,.07);
   --card-2: rgba(255,255,255,.09);
   --border: rgba(255,255,255,.16);
@@ -15,9 +15,8 @@
   --muted: #cbd5e1;           /* slate-300 */
   --muted-2: #94a3b8;         /* slate-400 */
 
-  --brand: #22c1b5;           /* turquoise */
-  --accent: #f97386;          /* coral */
-  --sand: #f5d77c;            /* sand */
+  --brand: #acd6e7;           /* logo light blue */
+  --brand-strong: #557d95;    /* logo medium blue */
 
   --shadow: 0 18px 50px rgba(0,0,0,.35);
   --radius: 18px;
@@ -90,6 +89,10 @@ a:hover{ text-decoration: underline; }
   min-width: 240px;
 }
 .brand img{ display:block; }
+.brand-picture{ display:block; }
+.brand-logo{ height: 56px; width: auto; display:block; }
+.footer-picture{ display:block; }
+.footer-logo{ height: 40px; width: auto; display:block; }
 .brand-text{ display:flex; flex-direction:column; line-height:1.1; }
 .brand-name{ font-weight: 750; letter-spacing: .2px; }
 .brand-tag{ color: var(--muted); font-size: 12px; margin-top: 4px; }
@@ -162,16 +165,16 @@ a:hover{ text-decoration: underline; }
 .btn-primary{
   background: var(--brand);
   border-color: rgba(255,255,255,.18);
-  color: #062027;
-  box-shadow: 0 10px 30px rgba(34,193,181,.18);
+  color: #0b1724;
+  box-shadow: 0 10px 30px rgba(172,214,231,.18);
 }
 .btn-primary:hover{
-  background: #1aa79c;
+  background: #9ccfe3;
 }
 .btn-secondary{
-  background: var(--sand);
-  border-color: rgba(245,215,124,.45);
-  color: #062027;
+  background: var(--brand-strong);
+  border-color: rgba(255,255,255,.18);
+  color: var(--text);
 }
 .btn-ghost{
   background: transparent;
@@ -343,15 +346,15 @@ h3{ font-size: 18px; }
   color: rgba(255,255,255,.82);
 }
 .plan-card.featured{
-  border-color: rgba(34,193,181,.35);
-  background: rgba(34,193,181,.10);
+  border-color: rgba(172,214,231,.35);
+  background: rgba(172,214,231,.08);
 }
 .pill{
   display:inline-block;
   font-size: 12px;
   font-weight: 800;
   color: #062027;
-  background: var(--sand);
+  background: var(--brand);
   padding: 6px 10px;
   border-radius: 999px;
   margin-bottom: 10px;
@@ -427,8 +430,8 @@ h3{ font-size: 18px; }
   place-items:center;
   font-weight: 850;
   margin-bottom: 10px;
-  color: #062027;
-  background: var(--sand);
+  color: #0b1724;
+  background: var(--brand);
 }
 
 /* Area grid */
@@ -521,6 +524,8 @@ textarea{ resize: vertical; min-height: 120px; }
 }
 
 @media (max-width: 780px){
+  .brand-logo{ height: 48px; }
+
   .site-nav{
     display:none;
     width: 100%;
